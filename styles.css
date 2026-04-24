@@ -30,9 +30,11 @@ body{
     background-color: #fff;
     margin: 40px auto;
     max-width: 80vw;
-    min-height: auto;
-    padding: 30px 20px;
+    min-height:450px;;
+    max-height: auto;
+    
     border-radius: 20px;
+    padding: 0 5px;
     text-align: center;
 }
 h2{
@@ -53,20 +55,20 @@ h2{
     
 }
 .form-grupo{
+    width: 100%;
     text-align: start;
-    margin: 30px 20px;
 }
 .form-input{
     height: 45px;
     width: 100%;
-    font-size: 17px;
+    font-size: 12px;
     border: none;
     border-bottom: 1px solid black;
     padding-left: 40px;
 }
 ::placeholder{
     color: #181717f2;
-    font-size: 20px;
+    font-size: 13px;
     font-weight: 500;
 }
 .form-input:focus{
@@ -81,11 +83,11 @@ h2{
 }
 .id-card-line{
     position: absolute;
-    left: 5px;        
+    left: 12px;        
     top: 50%;
     transform: translateY(-60%); 
     color: #1f2656;    
-    min-height:25px;
+    max-height:17px;
 }
 .grupo-2{
     position: relative;
@@ -95,11 +97,11 @@ h2{
 
 .lock-fill{
     position: absolute;
-    left: 5px;        
+    left: 12px;        
     top: 50%;          
     transform: translateY(-60%); 
     color: #1f2656;    
-    min-height: 25px;
+    max-height: 17px;
 }
 
 /* ------------input checked-------- */
@@ -115,7 +117,7 @@ h2{
     top: 50%;          
     transform: translateY(-53%); 
     color: #1f2656;    
-    height: 27px;
+    height: 15px;
 }
 .password-toggle:checked ~ .eye-button .eye-open {
     display:none;
@@ -239,6 +241,7 @@ h2{
     display: flex;
     flex-direction: column;
     margin: 17px;
+    width: 90%;
 }
 
 
