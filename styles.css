@@ -3,16 +3,175 @@
     margin: 0;
     padding: 0;
 }
-/*----------- Fondo ------------*/
-html, body {
-    height: 100%;
-    width: 100%;
+
+    /* -------fondos_celular------ */
+body{
+    background: linear-gradient(to right, transparent, #1f265c), url('imagenes/unnamed.jpeg') no-repeat center / cover;
+    min-height: 100vh;
 }
+
+/* -----header_logos------- */
+.header-logos{
+    width: 100%;
+    max-height: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.header-img{
+    height: 50px;
+    margin: 0 0 0 7px;
+}
+.img__misión{
+    display: none;
+}
+
+/* --------login------- */
+.login-content{
+    background-color: #fff;
+    margin: 40px auto;
+    max-width: 80vw;
+    min-height: auto;
+    padding: 30px 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: #000000;
+    margin: 0 auto;
+    font-size: 22px;
+    font-weight: 600;
+    max-width: 110px;
+    line-height: 1;
+}    
+.main-img{
+    max-height: 15vh;
+}
+/*------ form -------*/
+.login-form{
+    
+}
+.form-grupo{
+    text-align: start;
+    margin: 30px 20px;
+}
+.form-input{
+    height: 45px;
+    width: 100%;
+    font-size: 17px;
+    border: none;
+    border-bottom: 1px solid black;
+    padding-left: 40px;
+}
+::placeholder{
+    color: #181717f2;
+    font-size: 20px;
+    font-weight: 500;
+}
+.form-input:focus{
+    outline: none;
+    background-color: #f7f7f7ea;
+    border-radius: 10px;
+    border-bottom: 2px solid black;
+}
+/* ----iconos-input---- */
+.grupo-1{
+    position: relative;
+}
+.id-card-line{
+    position: absolute;
+    left: 5px;        
+    top: 50%;
+    transform: translateY(-60%); 
+    color: #1f2656;    
+    min-height:25px;
+}
+.grupo-2{
+    position: relative;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.lock-fill{
+    position: absolute;
+    left: 5px;        
+    top: 50%;          
+    transform: translateY(-60%); 
+    color: #1f2656;    
+    min-height: 25px;
+}
+
+/* ------------input checked-------- */
+.password-toggle{
+    display: none;
+}
+.eye-closed{
+    display: none;
+}
+.eye-open, .eye-closed{
+    position: absolute;
+    right: 15px;        
+    top: 50%;          
+    transform: translateY(-53%); 
+    color: #1f2656;    
+    height: 27px;
+}
+.password-toggle:checked ~ .eye-button .eye-open {
+    display:none;
+}
+
+.password-toggle:checked ~ .eye-button .eye-closed {
+    display: inline-block;
+}
+
+/* ----olvido_contraseña---- */
+.form-links-box{
+    width: 100%;
+    display: flex;
+    margin-top: 19px;
+    padding: 0;
+    justify-content: space-between;
+}
+.link-a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #000;
+}
+.olivido-password{
+    margin: 0 0 0 20px;
+}
+.registrar{
+    margin: 0 26px 0 0;
+}
+.form-intro-box{
+    margin:1rem;
+    text-align: center;
+    max-width: 100%;
+    height: auto;
+}
+.form-intro{
+    background-color: #121111;
+    color: #ffffff;
+    width: 170px;
+    height: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+/* -------PC------- */
+@media screen and (min-width:590px) {
+
+/*----------- Fondos ------------*/
+
 body{
     margin: 0;
     padding: 0;
+    overflow: hidden;
     background: linear-gradient(to right, transparent , #1f2656 79% ), url(imagenes/unnamed.jpeg) no-repeat center / cover ;
-    background-size: 100% 100%;
     
 }
 /* ------------Fin de fondo------------ */
@@ -22,27 +181,38 @@ body{
 .header-logos{
     display: flex;
     height: auto;
-    max-height: 70px;
+    max-height: 50px;
     max-width: 100%;
     justify-content: space-between;
     text-align: center;
     padding:  0 20px;
+    position: relative;
 }
 .header-img{
     font-size: 50px;
+    width: 380px;
     
 }
-.img-misión{
-    left: 0;
+.img__misión{
+    height: 90px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    display:block;
+}
+.minhvi{
+    max-height:90px;
+    max-width: 300px;
 }
 /* ---------fin del header----------- */
 
+
+
 /* ---------main-----------*/
-.main-container{
+.login-content{
     width: 400px;
-    height: 500px;
-    margin: auto;
-    margin-top: 40px;
+    max-height:auto;
+    margin: 10px auto;
     background:#ffffff;
     border-radius: 10px ;
 }
@@ -70,6 +240,8 @@ h2{
     flex-direction: column;
     margin: 17px;
 }
+
+
 /* -------iconos input----- */
 .grupo-1{
     position: relative;
@@ -77,9 +249,9 @@ h2{
 }
 .id-card-line{
     position: absolute;
-    left: 15px;        
+    left: 14px;        
     top: 50%;          
-    transform: translateY(-29%); 
+    transform: translateY(-31%); 
     color: #1f2656;    
     font-size: 18px;
 }
@@ -91,40 +263,86 @@ h2{
     position: absolute;
     left: 15px;        
     top: 50%;          
-    transform: translateY(-29%); 
+    transform: translateY(-33%); 
     color: #1f2656;    
     font-size: 18px;
 }
-/* fin iconos */
 
-label{
-    margin-top: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 17px;
-    font-weight: 500;
-    color: #1f2656;
+
+/* ------------input checked-------- */
+
+.password-toggle{
     display: none;
 }
+.eye-closed{
+    display: none;
+}
+.eye-open, .eye-closed{
+    position: absolute;
+    right: 15px;        
+    top: 50%;          
+    transform: translateY(-29%); 
+    color: #1f2656;    
+    height: 24px;
+}
+.password-toggle:checked ~ .eye-button .eye-open {
+    display:none;
+}
+
+.password-toggle:checked ~ .eye-button .eye-closed {
+    display: inline-block;
+}
+/* -----------input checked fin---------*/
+
+
+/* -----------fomulario---------- */
 .form-input{
     margin: 10px 0 0 0;
     height: 47px;
-    font-size: 18px;
+    font-size: 12px;
     border-radius: 16px;
     padding-left: 44px;
     border: none;
-    box-shadow: 0 2px 6px ;
+    box-shadow: 0 2px 5px ;
+}
+::placeholder{
+    font-size: 15px;
 }
 .form-input:focus{
     outline: none;
     background-color: #c9c7c71f;
-    box-shadow: 0 1px 7px;
+    box-shadow: 0 1px 4px;
+    transition: 1s;
     
 }
+.link-a{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    color: #000;
+}
 .olivido-password{
-    font-family: sans-serif;
-    display: block;
+    margin: 0 0 0 20px;
+}
+.registrar{
+    margin: 0 26px 0 0;
+}
+.form-intro-box{
+    margin: 27px;
     text-align: center;
-    color:#1c1c1c;
-    font-size: 19px;
+    max-width: 100%;
+    height: 50px;
+}
+.form-intro{
+    background-color: #121111;
+    color: #ffffff;
+    width: 320px;
+    height: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    border-radius: 30px;
+}
+/* fin formulario */
 
 }
