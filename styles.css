@@ -11,9 +11,11 @@ body{
 }
 
 /* -----header_logos------- */
+.img__ministerio{
+    width: 130px;
+}
 .header-logos{
     width: 100%;
-    max-height: 5%;
     display: flex;
     justify-content: space-between;
 }
@@ -30,11 +32,10 @@ body{
     background-color: #fff;
     margin: 40px auto;
     max-width: 80vw;
-    min-height:450px;;
-    max-height: auto;
-    
+    max-height: none;
+    min-height:450px;
     border-radius: 20px;
-    padding: 0 5px;
+    padding: 5px;
     text-align: center;
 }
 h2{
@@ -51,11 +52,9 @@ h2{
     max-height: 15vh;
 }
 /*------ form -------*/
-.login-form{
-    
-}
 .form-grupo{
     width: 100%;
+    height: 90px;
     text-align: start;
 }
 .form-input{
@@ -66,7 +65,7 @@ h2{
     border-bottom: 1px solid black;
     padding-left: 40px;
 }
-::placeholder{
+.form-input::placeholder{
     color: #181717f2;
     font-size: 13px;
     font-weight: 500;
@@ -78,28 +77,39 @@ h2{
     border-bottom: 2px solid black;
 }
 /* ----iconos-input---- */
+
+.requerido, .requerido-contra{
+    color: rgb(214, 28, 28);
+    font-family: sans-serif;
+    font-size: 13px;
+    margin: 10px 0 0 10px;
+    width: 100%;
+    display: none;
+}
 .grupo-1{
     position: relative;
+    margin-top: 15px;
+    
 }
 .id-card-line{
     position: absolute;
     left: 12px;        
     top: 50%;
-    transform: translateY(-60%); 
+    transform: translateY(-180%); 
     color: #1f2656;    
     max-height:17px;
 }
 .grupo-2{
     position: relative;
-    margin-top: 40px;
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 .lock-fill{
     position: absolute;
     left: 12px;        
     top: 50%;          
-    transform: translateY(-60%); 
+    transform: translateY(-180%); 
     color: #1f2656;    
     max-height: 17px;
 }
@@ -115,9 +125,9 @@ h2{
     position: absolute;
     right: 15px;        
     top: 50%;          
-    transform: translateY(-53%); 
+    transform: translateY(-178%); 
     color: #1f2656;    
-    height: 15px;
+    height: 18px;
 }
 .password-toggle:checked ~ .eye-button .eye-open {
     display:none;
@@ -137,11 +147,11 @@ h2{
 }
 .link-a{
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: 600;
     color: #000;
 }
-.olivido-password{
+.olvido-password{
     margin: 0 0 0 20px;
 }
 .registrar{
@@ -156,7 +166,7 @@ h2{
 .form-intro{
     background-color: #121111;
     color: #ffffff;
-    width: 170px;
+    width: 150px;
     height: 50px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 600;
@@ -170,33 +180,30 @@ h2{
 /*----------- Fondos ------------*/
 
 body{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
     background: linear-gradient(to right, transparent , #1f2656 79% ), url(imagenes/unnamed.jpeg) no-repeat center / cover ;
-    
 }
 /* ------------Fin de fondo------------ */
 
 
 /* -------------header-------- */
 .header-logos{
-    display: flex;
     height: auto;
     max-height: 50px;
     max-width: 100%;
-    justify-content: space-between;
-    text-align: center;
+    margin-bottom: 50px;
     padding:  0 20px;
     position: relative;
 }
 .header-img{
     font-size: 50px;
     width: 380px;
-    
+}
+.img__ministerio{
+    width: 400px;
+    height: 80px;
 }
 .img__misión{
-    height: 90px;
+    height: 80px;
     width: auto;
     margin: 0;
     padding: 0;
@@ -215,8 +222,6 @@ body{
     width: 400px;
     max-height:auto;
     margin: 10px auto;
-    background:#ffffff;
-    border-radius: 10px ;
 }
 .main-conteiner-img{
     display: flex;
@@ -228,72 +233,52 @@ body{
     max-height:80px ;
 }
 h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-align: center;
-    color: #000000;
-    margin: 0 auto;
     font-size: 30px;
-    font-weight: 600;
     max-width: 200px;
     line-height: 1;
 }
 .form-grupo{
     display: flex;
     flex-direction: column;
-    margin: 17px;
+    margin: 0 15px;
     width: 90%;
+    height: 80px;
 }
 
-
 /* -------iconos input----- */
+.requerido{
+    font-size: 14px;
+    margin: 6px 0 0 9px;    
+}
+
 .grupo-1{
-    position: relative;
-    margin-bottom: 15px
+    margin-top: 16px;
+    margin-bottom: 10px
 }
 .id-card-line{
     position: absolute;
     left: 14px;        
     top: 50%;          
-    transform: translateY(-31%); 
+    transform: translateY(-85%); 
     color: #1f2656;    
     font-size: 18px;
 }
 .grupo-2{
-    margin-top: 30px;
-    position: relative;
+    margin-top: 18px;
 }
 .lock-fill{
     position: absolute;
     left: 15px;        
-    top: 50%;          
-    transform: translateY(-33%); 
+    transform: translateY(-85%); 
     color: #1f2656;    
     font-size: 18px;
 }
-
-
 /* ------------input checked-------- */
 
-.password-toggle{
-    display: none;
-}
-.eye-closed{
-    display: none;
-}
 .eye-open, .eye-closed{
-    position: absolute;
-    right: 15px;        
-    top: 50%;          
-    transform: translateY(-29%); 
+    transform: translateY(-79%); 
     color: #1f2656;    
-    height: 24px;
-}
-.password-toggle:checked ~ .eye-button .eye-open {
-    display:none;
-}
-
-.password-toggle:checked ~ .eye-button .eye-closed {
-    display: inline-block;
+    height: 23px;
 }
 /* -----------input checked fin---------*/
 
@@ -301,51 +286,31 @@ h2{
 /* -----------fomulario---------- */
 .form-input{
     margin: 10px 0 0 0;
-    height: 47px;
+    height: 49px;
     font-size: 12px;
     border-radius: 16px;
     padding-left: 44px;
-    border: none;
     box-shadow: 0 2px 5px ;
 }
 ::placeholder{
     font-size: 15px;
 }
 .form-input:focus{
-    outline: none;
     background-color: #c9c7c71f;
     box-shadow: 0 1px 4px;
     transition: 1s;
     
 }
-.link-a{
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 10px;
-    font-weight: 600;
-    color: #000;
-}
 .olivido-password{
     margin: 0 0 0 20px;
 }
-.registrar{
-    margin: 0 26px 0 0;
-}
 .form-intro-box{
     margin: 27px;
-    text-align: center;
-    max-width: 100%;
     height: 50px;
 }
 .form-intro{
-    background-color: #121111;
-    color: #ffffff;
     width: 320px;
     height: 50px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 600;
-    font-size: 20px;
-    border-radius: 30px;
 }
 /* fin formulario */
-
 }

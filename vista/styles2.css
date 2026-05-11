@@ -1,0 +1,266 @@
+/* barra de navegacion */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-color: #f2f2f2;
+}
+.conteiner{
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width:270px;
+    min-height: 100vh;
+    z-index: 1000;
+    background-color: rgb(4, 0, 23);
+    border-radius:0px 15px 15px 0;
+
+    /* transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.3s ease; */
+}
+.conteiner-img{
+    height: 100px;
+    padding: 0px 0px 0 70px;
+}
+/* LI */
+nav{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+li{
+    list-style: none;
+    margin:10px 60px;
+    font-size: 18px;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.conteiner-iconos{
+    position: relative;  
+    width: 100%;
+    height: 62px;
+    justify-content: center;
+}
+.iconos{
+    position: absolute;
+    padding-left: 23px;
+    transform: translateY(-150%);
+    height: 23px;
+}
+.conteiner-iconos:hover{
+    background-color: rgba(18, 2, 102, 0.947);
+    border-radius: 40px;
+}
+/* barra superior */
+.top-bar {
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: rgb(10, 2, 42);
+    justify-content: space-between;
+    align-items: center;
+    width:80% ;
+    margin-left: 260px;
+    padding: 15px 30px;
+    height: 60px;
+    z-index: 999;
+}
+span{
+    font-family: sans-serif;
+    font-size: 18px;
+    color: #ececec;
+}
+.salida{
+    border: 3px solid #c7c6c6c6;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.salida:hover{
+    background-color: #a1a0a062 ;
+    color: black;
+}
+label{
+    color: #fff;
+    font-size: 40px;
+    z-index: 2000;
+}
+
+/* .header__checkbox:checked ~ .conteiner{
+    transform: translateX(0);
+    opacity: 1;
+} */
+
+/* login */
+main{
+    margin: 2px 5px 0 0;
+    height: 100vh;
+    margin-left: 271px;
+}
+.login{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    margin-top: 80px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    box-shadow: 1px 2px 6px black;
+}
+.h3{
+    height: 90px;
+    border-bottom: 1px solid rgb(202, 202, 202);
+    background-color: #eae9e9;
+    border-radius: 20px  20px 0 0;
+}
+h3{
+    padding: 22px;
+    padding-top:30px ;
+    font-weight: 700;
+    font-size: 23px;
+}
+/* input */
+.flex{
+    display: flex;
+}
+.conteiner-input, .conteiner-form{
+    width: 300px;
+    height: 90px;
+    margin: 20px 0 0 2px;
+}
+.div-Genero{
+    margin-top: 16px;
+}
+
+.nombre, .Cedula, .Genero, .Discapacidad, .Asunto, .Municipio, .Telefono, .depeartamentos-label,.seguimiento {
+    font-size: 21px;
+    padding-left: 20px;
+    font-weight: 600;
+    color: black;
+    font-family: "Monzerrat";
+    font-weight: 800;
+}
+#nombre, #Cedula, #Telefono{
+    width: 220px;
+    height: 48px;
+    border-radius: 10px;
+    border:none;
+    border: 1px solid rgb(219, 207, 192);
+    padding-left: 10px;
+    margin: 10px 0 0 20px;
+    background-color: #ffffff;
+}
+
+#Telefono{
+    margin-top: 5px;
+}
+::placeholder{
+    padding-left: 10px;
+}
+
+.input2{
+    width: 300px;
+    height: 90px;
+}
+
+/* selct */
+
+.Genero, .Discapacidad, .Municipio{
+    font-size: 26px;
+    margin: 0 10px;
+}
+.Genero{
+    
+}
+#Genero, #Discapacidad, #Municipio{
+    width: 180px;
+    height: 50px;
+    margin-left:20px ;
+    margin-top: 14px;
+    border-radius: 14px;
+    padding-left: 20px;
+}
+#Genero{
+    width: 200px;
+    margin-top: 1px;
+}
+#Discapacidad{
+    width: 199px;
+}
+
+.indicador, .Departamento{
+    margin: 23px 8px 0 8px;
+    height: 90px;
+}
+.Asunto, .depeartamentos-label{
+    margin-right: 30px;
+}
+#Asunto, #Departamento{
+    width: 90%;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+.municipio{
+    margin-top: 29px;
+}
+.Municipio{
+    font-size: 20px;
+}
+
+/* textarea */
+
+.textarea{
+    width: 470px;
+    height: 90px;
+    margin: auto;
+
+}
+textarea{
+    resize: none;
+    padding: 15px;
+}
+.div-Seguimiento{
+    margin-top: 20px;
+    height: 90px;
+    width: 230px;
+}
+.seguimiento{
+    margin-left: 20px;
+}
+#Seguimiento{
+    margin: 4px;
+    width: 50px;
+    height: 28px;
+    padding-left: 8px;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 7px;
+}
+.enviar{
+    height: 100px;
+    margin-top: 19px;
+    position: relative;
+}
+#enviar{
+    position: absolute;
+    height: 50px;
+    width: 90px;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 10px;
+    border: 0.6px solid rgb(149, 149, 149);
+    background-color: #c8c6c6;
+    
+}
+#enviar:hover{
+    background-color:rgba(159, 158, 158, 0.891);
+    transition: 0.5s;
+}
